@@ -76,5 +76,38 @@
 
 .footer {
   background-color: #202020;
+  border-top: 2px groove white;
   color: white;
+}
+
+.social img {
+  width: 30px;
+}
+
+.centered-left{
+  width:fit-content;
+  text-align: left;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.whatsapp-logo {
+  max-width: 50px;
+}
+
+.under-footer {
+  background-color: #383838;
+  color: #bbb;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.under-footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.iconos {
+  color: #678B1D;
 }

@@ -1,4 +1,5 @@
 import { MenuService } from './../../services/menu.service';
+import {faMapMarkerAlt, faPhoneAlt, faClock} from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  faMapMarkerAlt = faMapMarkerAlt;
+  faPhoneAlt = faPhoneAlt;
+  faClock = faClock;
   appetizers = [];
   tacos = [];
   tortas = [];
