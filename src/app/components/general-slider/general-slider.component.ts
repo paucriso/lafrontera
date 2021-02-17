@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { MenuService } from './../../services/menu.service';
-import Swiper from 'swiper';
+import Swiper, {Autoplay} from 'swiper';
 
 @Component({
   selector: 'app-general-slider',
@@ -13,12 +13,16 @@ export class GeneralSliderComponent implements OnInit, AfterViewInit {
   
   constructor(private menuService: MenuService) {
     this.mainSlider = menuService.mainSlider;
+    Swiper.use([Autoplay]);
   }
 
   ngAfterViewInit(): void {
     this.swiper = new Swiper('.swiper-container', {
       // Optional parameters
       loop: true,
+      autoplay: {
+        delay: 3000,
+        },
     });    
   }
 

@@ -12,183 +12,189 @@
       <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
   </svg>
 </div>
-<div class="container contenido text-center">
+<div class="contenido text-center">
   <h3 class="m-0 p-0">OUR MENU</h3>
 </div>
 <app-general-slider></app-general-slider>
 
-<div class="container contenido pb-4">
-  <div class="row">
-    <div class="col text-center pt-3">
-      <h3>APPETIZERS</h3>
-      <h5>(Lechuga, tomate, pepino, aguacate, cebolla y dressing de la casa)</h5>
+<div class="main-container">
+  <div class="container contenido pb-4">
+    <div class="row">
+      <div class="col text-center pt-3">
+        <h3>APPETIZERS</h3>
+        <h5>(Lechuga, tomate, pepino, aguacate, cebolla y dressing de la casa)</h5>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let appetizer of appetizers">
-    <div class="col-8">
-      <h6>{{appetizer.name}}</h6>
+    <div class="row" *ngFor="let appetizer of appetizers">
+      <div class="col-8">
+        <h6>{{appetizer.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{appetizer.price}}</h6>
+      </div>
     </div>
-    <div class="col-4 text-right">
-      <h6>{{appetizer.price}}</h6>
+    <div class="row text-center">
+      <div class="col">
+        <h3>TACOS</h3>
+      </div>
     </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>TACOS</h3>
+    <div class="row" *ngFor="let taco of tacos">
+      <div class="col-8">
+        <h6>{{taco.name}}</h6>
+        <p class="extra" *ngIf="taco.extra">{{taco.extra}}</p>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{taco.price}}</h6>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let taco of tacos">
-    <div class="col-8">
-      <h6>{{taco.name}}</h6>
-      <p class="extra" *ngIf="taco.extra">{{taco.extra}}</p>
+    <div class="row text-center">
+      <div class="col">
+        <h3>TORTAS/CEMITAS</h3>
+      </div>
     </div>
-    <div class="col-4 text-right">
-      <h6>{{taco.price}}</h6>
+    <div class="row" *ngFor="let torta of tortas">
+      <div class="col-9 pr-0">
+        <h6>{{torta.name}}</h6>
+        <p *ngIf="torta.extra" class="extra">{{torta.extra}}</p>
+      </div>
+      <div class="col-3 text-right pl-0">
+        <h6>{{torta.price}}</h6>
+      </div>
     </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>TORTAS/CEMITAS</h3>
+    <div class="row text-center">
+      <div class="col">
+        <h3>QUESADILLAS</h3>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let torta of tortas">
-    <div class="col-9 pr-0">
-      <h6>{{torta.name}}</h6>
-      <p *ngIf="torta.extra" class="extra">{{torta.extra}}</p>
+    <div class="row" *ngFor="let quesadilla of quesadillas">
+      <div class="col-8">
+        <h6>{{quesadilla.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{quesadilla.price}}</h6>
+      </div>
     </div>
-    <div class="col-3 text-right pl-0">
-      <h6>{{torta.price}}</h6>
+    <div class="row text-center">
+      <div class="col">
+        <h3>TOSTADAS</h3>
+      </div>
     </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>QUESADILLAS</h3>
+    <div class="row" *ngFor="let tostada of tostadas">
+      <div class="col-8">
+        <h6>{{tostada.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{tostada.price}}</h6>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let quesadilla of quesadillas">
-    <div class="col-8">
-      <h6>{{quesadilla.name}}</h6>
+    <div class="row text-center">
+      <div class="col">
+        <h3>BURRITOS</h3>
+      </div>
     </div>
-    <div class="col-4 text-right">
-      <h6>{{quesadilla.price}}</h6>
+    <div class="row" *ngFor="let burrito of burritos">
+      <div class="col-8">
+        <h6>{{burrito.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{burrito.price}}</h6>
+      </div>
     </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>TOSTADAS</h3>
+    <div class="row text-center">
+      <div class="col">
+        <h3>SOPES</h3>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let tostada of tostadas">
-    <div class="col-8">
-      <h6>{{tostada.name}}</h6>
+    <div class="row" *ngFor="let sope of sopes">
+      <div class="col-8">
+        <h6>{{sope.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{sope.price}}</h6>
+      </div>
     </div>
-    <div class="col-4 text-right">
-      <h6>{{tostada.price}}</h6>
+    <div class="row text-center">
+      <div class="col">
+        <h3>PLATILLOS</h3>
+      </div>
     </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>BURRITOS</h3>
+    <div class="row" *ngFor="let platillo of platillos">
+      <div class="col-8">
+        <h6>{{platillo.name}}</h6>
+        <p class="extra" *ngIf="platillo.extra">{{platillo.extra}}</p>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{platillo.price}}</h6>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let burrito of burritos">
-    <div class="col-8">
-      <h6>{{burrito.name}}</h6>
+    <div class="row text-center">
+      <div class="col">
+        <h3>CALDOS</h3>
+        <h5 class="extra">(Todo acompañado con arroz, frijoles y tortillas menos el caldo de pollo)</h5>
+      </div>
     </div>
-    <div class="col-4 text-right">
-      <h6>{{burrito.price}}</h6>
+    <div class="row" *ngFor="let caldo of caldos">
+      <div class="col-8">
+        <h6>{{caldo.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{caldo.price}}</h6>
+      </div>
     </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>SOPES</h3>
+    <div class="row text-center">
+      <div class="col">
+        <h3>SIDE ORDERS</h3>
+      </div>
     </div>
-  </div>
-  <div class="row" *ngFor="let sope of sopes">
-    <div class="col-8">
-      <h6>{{sope.name}}</h6>
-    </div>
-    <div class="col-4 text-right">
-      <h6>{{sope.price}}</h6>
-    </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>PLATILLOS</h3>
-    </div>
-  </div>
-  <div class="row" *ngFor="let platillo of platillos">
-    <div class="col-8">
-      <h6>{{platillo.name}}</h6>
-      <p class="extra" *ngIf="platillo.extra">{{platillo.extra}}</p>
-    </div>
-    <div class="col-4 text-right">
-      <h6>{{platillo.price}}</h6>
-    </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>CALDOS</h3>
-      <h5 class="extra">(Todo acompañado con arroz, frijoles y tortillas menos el caldo de pollo)</h5>
-    </div>
-  </div>
-  <div class="row" *ngFor="let caldo of caldos">
-    <div class="col-8">
-      <h6>{{caldo.name}}</h6>
-    </div>
-    <div class="col-4 text-right">
-      <h6>{{caldo.price}}</h6>
-    </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h3>SIDE ORDERS</h3>
-    </div>
-  </div>
-  <div class="row" *ngFor="let sideOrder of sideOrders">
-    <div class="col-8">
-      <h6>{{sideOrder.name}}</h6>
-    </div>
-    <div class="col-4 text-right">
-      <h6>{{sideOrder.price}}</h6>
+    <div class="row" *ngFor="let sideOrder of sideOrders">
+      <div class="col-8">
+        <h6>{{sideOrder.name}}</h6>
+      </div>
+      <div class="col-4 text-right">
+        <h6>{{sideOrder.price}}</h6>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container footer py-4">
-  <div class="row">
-    <div class="col">
-      <div class="centered-left">
-        <span class="mb-2">
-          <fa-icon [icon]="faMapMarkerAlt" class="iconos"></fa-icon>
-          497 E 138th St, Bronx, NY 10454
-        </span>
-        <br>
-        <span>
-         <fa-icon [icon]="faPhoneAlt" class="iconos"></fa-icon>
-        (718) 684-1418 
-        </span>
-        <br>
-        <span>
-         <fa-icon [icon]="faClock" class="iconos"></fa-icon>
-        Mon-Fri 9AM - 10PM 
-        </span>
-        
+<div class="main-footer">
+  <div class="container footer py-4">
+    <div class="row">
+      <div class="col">
+        <div class="centered-left">
+          <span class="mb-2">
+            <fa-icon [icon]="faMapMarkerAlt" class="iconos"></fa-icon>
+            497 E 138th St, Bronx, NY 10454
+          </span>
+          <br>
+          <span>
+           <fa-icon [icon]="faPhoneAlt" class="iconos"></fa-icon>
+          (718) 684-1418 
+          </span>
+          <br>
+          <span>
+           <fa-icon [icon]="faClock" class="iconos"></fa-icon>
+          Mon-Fri 9AM - 10PM 
+          </span>
+          
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col text-center">
-      <a href="https://wa.me/17188078905" rel="nofollow" target="_blank"><img src="assets/whatsapp-logo.png" alt="" class="whatsapp-logo"></a>
-      <h4>CONTACT US</h4>
-      <h5 class="mt-3">Follow us on:</h5>
-      <div class="social">
-        <a href="https://www.facebook.com/FronteraTheBest" class="mr-2"><img src="assets/facebook.png" alt=""></a>
-        <a href="https://www.instagram.com/its_lafronteranyc"><img src="assets/instagram.png" alt=""></a>
+    <div class="row mt-3">
+      <div class="col text-center">
+        <a href="https://wa.me/17188078905" rel="nofollow" target="_blank"><img src="assets/whatsapp-logo.png" alt="" class="whatsapp-logo"></a>
+        <h4>CONTACT US</h4>
+        <h5 class="mt-3">Follow us on:</h5>
+        <div class="social">
+          <a href="https://www.facebook.com/FronteraTheBest" class="mr-2"><img src="assets/facebook.png" alt=""></a>
+          <a href="https://www.instagram.com/its_lafronteranyc"><img src="assets/instagram.png" alt=""></a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container under-footer text-center">
-  Developperd by <a href="https://www.followermg.com">Follower Media Group</a>
+<div class="main-under-footer">
+  <div class="container under-footer text-center">
+    Developed by <a href="https://www.followermg.com">Follower Media Group</a>
+  </div>
 </div>

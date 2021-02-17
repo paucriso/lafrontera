@@ -24,6 +24,10 @@
   color: white;
 }
 
+.main-container {
+  background-color: #678b1d;
+}
+
 .contenido h3 {
   color: yellow;
 }
@@ -84,10 +88,18 @@
   fill: #FFFFFF;
 }
 
-.footer {
+.main-footer {
   background-color: #202020;
   border-top: 2px groove white;
+}
+
+.footer {
+  background-color: #202020;
   color: white;
+}
+
+.main-under-footer {
+  background-color: #383838;
 }
 
 .social img {
