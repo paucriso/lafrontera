@@ -28,6 +28,16 @@
   color: yellow;
 }
 
+.contenido h5, .extra {
+  font-size: 14px;
+  font-style: italic;
+  color: yellow;
+}
+
+.extra {
+  color: white;
+}
+
 .custom-shape-divider-top-1613572416 {
   position: absolute;
   top: 0;

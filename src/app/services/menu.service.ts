@@ -27,11 +27,11 @@ export class MenuService {
     {name: 'Barbacoa', price: '3x $15'},
     {name: 'Shrimp', price: '3x $15'},
     {name: 'Chapulines', price: '3x $15'},
-    {name: 'Tacos Placeros', price: '2x $12', extra: 'Tortillas hechas a mano, Arroz, Chile Poblano, Huevo hervido, rajas con epazote de milanesa de pollo o de res.'}
+    {name: 'Tacos Placeros', price: '2x $12', extra: '(Tortillas hechas a mano, Arroz, Chile Poblano, Huevo hervido, rajas con epazote de milanesa de pollo o de res)'}
   ];
 
   tortas = [
-    {name: 'La Frontera', price: '$13'},
+    {name: 'La Frontera', price: '$13', extra: '(bistec, carnitas, chorizo, huevo estrellado, lechuga, aguacate, cebolla y chile)'},
     {name: 'Carne Enchilada', price: '$10'},
     {name: 'Cecina', price: '$10'},
     {name: 'Milanesa de Res', price: '$10'},
@@ -106,7 +106,7 @@ export class MenuService {
     {name: 'Bistek a La Mexicana', price: '$22'},
     {name: 'Bistek Encebollado', price: '$21'},
     {name: 'Ribeye estilo La Frontera', price: '$40'},
-    {name: 'Molcajete La Frontera', price: '$40', extra: 'arroz, frijoles, chorizo, cecina, carne enchilada, pollo y salsa de casa'},
+    {name: 'Molcajete La Frontera', price: '$40', extra: '(arroz, frijoles, chorizo, cecina, carne enchilada, pollo y salsa de casa)'},
     {name: 'Plato de Cecina', price: '$21'},
     {name: 'Plato de Carne Enchilada', price: '$21'},
     {name: 'Flautas', price: '5x $15', extra: 'Queso, Chorizo o Pollo'}
@@ -129,6 +129,22 @@ export class MenuService {
     {name: 'Cebollines', price: '$5'},
     {name: 'Crema', price: '$3'},
     {name: 'Guacamole', price: '$3'}
+  ];
+
+  mainSlider = [
+    {imgUrl: 'assets/slide1.jpg', imgName: 'Slide1'},
+    {imgUrl: './assets/slide2.jpg', imgName: 'Slide2'},
+    {imgUrl: 'assets/slide3.jpg', imgName: 'Slide3'},
+    {imgUrl: 'assets/slide4.jpg', imgName: 'Slide4'},
+    {imgUrl: 'assets/slide5.jpg', imgName: 'Slide5'},
+    {imgUrl: 'assets/slide6.jpg', imgName: 'Slide6'},
+    {imgUrl: 'assets/slide7.jpg', imgName: 'Slide7'},
+    {imgUrl: 'assets/slide8.jpg', imgName: 'Slide8'},
+    {imgUrl: 'assets/slide9.jpg', imgName: 'Slide9'},
+    {imgUrl: 'assets/slide10.jpg', imgName: 'Slide10'},
+    {imgUrl: 'assets/slide11.jpg', imgName: 'Slide11'},
+    {imgUrl: 'assets/slide12.jpg', imgName: 'Slide12'},
+    {imgUrl: 'assets/slide13.jpg', imgName: 'Slide13'},
   ];
 
   

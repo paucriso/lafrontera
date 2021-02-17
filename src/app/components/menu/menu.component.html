@@ -5,15 +5,23 @@
     </div>
   </div>
 </div>
+
 <div class="custom-shape-divider-top-1613572063 contenido">
+  
   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
   </svg>
 </div>
+<div class="container contenido text-center">
+  <h3 class="m-0 p-0">OUR MENU</h3>
+</div>
+<app-general-slider></app-general-slider>
+
 <div class="container contenido pb-4">
   <div class="row">
-    <div class="col text-center">
+    <div class="col text-center pt-3">
       <h3>APPETIZERS</h3>
+      <h5>(Lechuga, tomate, pepino, aguacate, cebolla y dressing de la casa)</h5>
     </div>
   </div>
   <div class="row" *ngFor="let appetizer of appetizers">
@@ -32,6 +40,7 @@
   <div class="row" *ngFor="let taco of tacos">
     <div class="col-8">
       <h6>{{taco.name}}</h6>
+      <p class="extra" *ngIf="taco.extra">{{taco.extra}}</p>
     </div>
     <div class="col-4 text-right">
       <h6>{{taco.price}}</h6>
@@ -43,10 +52,11 @@
     </div>
   </div>
   <div class="row" *ngFor="let torta of tortas">
-    <div class="col-8">
+    <div class="col-9 pr-0">
       <h6>{{torta.name}}</h6>
+      <p *ngIf="torta.extra" class="extra">{{torta.extra}}</p>
     </div>
-    <div class="col-4 text-right">
+    <div class="col-3 text-right pl-0">
       <h6>{{torta.price}}</h6>
     </div>
   </div>
@@ -110,6 +120,7 @@
   <div class="row" *ngFor="let platillo of platillos">
     <div class="col-8">
       <h6>{{platillo.name}}</h6>
+      <p class="extra" *ngIf="platillo.extra">{{platillo.extra}}</p>
     </div>
     <div class="col-4 text-right">
       <h6>{{platillo.price}}</h6>
@@ -118,6 +129,7 @@
   <div class="row text-center">
     <div class="col">
       <h3>CALDOS</h3>
+      <h5 class="extra">(Todo acompañado con arroz, frijoles y tortillas menos el caldo de pollo)</h5>
     </div>
   </div>
   <div class="row" *ngFor="let caldo of caldos">
