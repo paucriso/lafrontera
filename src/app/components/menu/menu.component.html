@@ -1,0 +1,137 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="col logo">
+      <img src="/assets/logo_500.jpg" alt="la frontera" class="img-fluid w-75 p3">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center mt-3">
+      <h3>APPETIZERS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let appetizer of appetizers">
+    <div class="col-8">
+      <h6>{{appetizer.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{appetizer.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>TACOS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let taco of tacos">
+    <div class="col-8">
+      <h6>{{taco.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{taco.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>TORTAS/CEMITAS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let torta of tortas">
+    <div class="col-8">
+      <h6>{{torta.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{torta.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>QUESADILLAS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let quesadilla of quesadillas">
+    <div class="col-8">
+      <h6>{{quesadilla.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{quesadilla.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>TOSTADAS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let tostada of tostadas">
+    <div class="col-8">
+      <h6>{{tostada.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{tostada.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>BURRITOS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let burrito of burritos">
+    <div class="col-8">
+      <h6>{{burrito.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{burrito.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>SOPES</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let sope of sopes">
+    <div class="col-8">
+      <h6>{{sope.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{sope.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>PLATILLOS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let platillo of platillos">
+    <div class="col-8">
+      <h6>{{platillo.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{platillo.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>CALDOS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let caldo of caldos">
+    <div class="col-8">
+      <h6>{{caldo.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{caldo.price}}</h6>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>SIDEORDERS</h3>
+    </div>
+  </div>
+  <div class="row" *ngFor="let sideOrder of sideOrders">
+    <div class="col-8">
+      <h6>{{sideOrder.name}}</h6>
+    </div>
+    <div class="col-4">
+      <h6>{{sideOrder.price}}</h6>
+    </div>
+  </div>
+</div>
