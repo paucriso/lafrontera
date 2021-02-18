@@ -1,6 +1,10 @@
 .swiper-container {
     height: 333px;
-    width: 100%;
+    max-width: 500px;
+    background-color: #678B1D;
+}
+
+.contenedor-slider {
     background-color: #678B1D;
 }
 
