@@ -99,7 +99,7 @@ export class MenuService {
 
   platillos = [
     {name: 'Enchiladas', price: '$17', extra: '(Verdes, Rojas o Mole)'},
-    {name: 'Chilaquiles', price: '$15', extra: '(Verdes o Rojos'},
+    {name: 'Chilaquiles', price: '$15', extra: '(Verdes o Rojos)'},
     {name: 'Mole Poblano', price: '$19', extra: '(con arroz, frijoles y tortillas)'},
     {name: 'Camarones a La Mexicana', price: '$23'},
     {name: 'Camarones a La Diabla', price: '$23'},
@@ -109,7 +109,7 @@ export class MenuService {
     {name: 'Molcajete La Frontera', price: '$40', extra: '(arroz, frijoles, chorizo, cecina, carne enchilada, pollo y salsa de casa)'},
     {name: 'Plato de Cecina', price: '$21'},
     {name: 'Plato de Carne Enchilada', price: '$21'},
-    {name: 'Flautas', price: '5x $15', extra: 'Queso, Chorizo o Pollo'}
+    {name: 'Flautas', price: '5x $15', extra: '(Queso, Chorizo o Pollo)'}
   ];
 
   caldos = [

@@ -1,11 +1,12 @@
 {
   "name": "La Frontera",
   "short_name": "La Frontera",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#678B1D",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
